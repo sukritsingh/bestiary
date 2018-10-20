@@ -2,7 +2,7 @@
 
 Bestiary is a mobile-friendly 5e compendium of creatures that organizes them in various classifications and strengths.
 
-See the latest compiled build here: [http://sukritsingh.github.io/byname/](http://sukritsingh.github.io/byname/)
+See the latest compiled build here: [http://sukritsingh.github.io/bestiary/](http://sukritsingh.github.io/bestiary/)
 
 Unfortunately, Github pages only allows flat pages, so at the moment my website only hosts the bestiary sorted by alphabetical list. Once it's hosted somewhere else it'll be usable in it's full form. 
 
