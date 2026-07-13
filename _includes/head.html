@@ -6,6 +6,11 @@
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{{ site.description }}">
 
+    <script>
+      document.documentElement.setAttribute('data-theme',
+        localStorage.getItem('theme') ||
+        (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'));
+    </script>
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <script src="https://use.typekit.net/dle2jou.js"></script>
@@ -21,8 +26,19 @@
     		}
   		}
 
+        function themeClick(e) {
+            e.preventDefault();
+            var next = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', next);
+            localStorage.setItem('theme', next);
+            e.target.innerHTML = next === 'dark' ? '&#9788;' : '&#9790;';
+        }
+
   		window.onload = function(){
+        var themeToggle = document.getElementById("themeToggle");
         document.getElementById("menuIcon").addEventListener( 'click' , menuClick );
+        themeToggle.addEventListener( 'click', themeClick );
+        if (document.documentElement.getAttribute('data-theme') === 'dark') themeToggle.innerHTML = '&#9788;';
 	    }
     </script>
 </head>
