@@ -7,7 +7,7 @@ baseurl: "/bestiary" # the subpath of your site, e.g. /blog/
 url: "https://sukritsingh.github.io" # the base hostname & protocol for your site
 source-url: "https://github.com/sukritsingh/bestiary/"
 permalink: "/:categories/:title"
-exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']
+exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md', 'docs']
 
 # Build settings
 markdown: kramdown
