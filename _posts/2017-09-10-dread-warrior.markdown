@@ -2,7 +2,7 @@
 layout: post
 title: "Dread Warrior"
 date: 2017-09-10
-tags: [medium, undead, crl, tales-from-the-yawning-portal]
+tags: [medium, undead, cr1, tales-from-the-yawning-portal]
 ---
 
 **Medium undead, neutral evil**
